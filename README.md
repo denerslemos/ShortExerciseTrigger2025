@@ -10,6 +10,10 @@ Please join our Mattermost channel for Q&A ([link]())
 
 ## Setup
 Both lxplus8 and lxplus9 can be used
+```
+ssh username@lxplus.cern.ch
+```
+CMSSW Setup:
 ```    
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 mkdir CMSDAS2025
