@@ -1,21 +1,19 @@
-# Trigger Short Exercise 2024
-Trigger short exercise CMS DAS @ CERN, June 2024 ([Indico](https://indico.cern.ch/event/1388937/))
+# Trigger Short Exercise 2025
+Trigger short exercise CMS DAS @ LPC FNAL, January 2025 ([Indico](https://indico.cern.ch/event/1388937/))
 
-Slides can be found [here](https://docs.google.com/presentation/d/1QEnsiFPUbY2XtM92Q7x1YLCQcJLH7vEjxXImIo_vR5s/edit#slide=id.g2e2500f5b74_0_138)
+Slides can be found [here]()
 
-Please join our Mattermost channel for Q&A ([link](https://mattermost.web.cern.ch/cmsdas24/channels/short-ex-triggers))
+Please join our Mattermost channel for Q&A ([link]())
 
 ## Facilitators
-1. Won Jun, Seoul National U. [wjun@cern.ch](mailto:won.jun@cern.ch)
-2. Jieun Choi, Hanyang U./IP2I Lyon [ji.eun.choi@cern.ch](mailto:ji.eun.choi@cern.ch)
-3. Pedro Fernandez Manteca, Rice U. [pedro.fernandez.manteca@cern.ch](mailto:pedro.fernandez.manteca@cern.ch)
+1. Dener De Souza Lemos
 
 ## Setup
-Both lxplus8, and lxplus9 can be used, but lxplus8 is recommended (to check pdf files easily)
+Both lxplus8 and lxplus9 can be used
 ```    
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-mkdir CMSDAS2024
-cd CMSDAS2024
+mkdir CMSDAS2025
+cd CMSDAS2025
 cmsrel CMSSW_14_0_8
 cd CMSSW_14_0_8/src
 cmsenv
@@ -25,12 +23,11 @@ cd short-ex-triggers
 ```
 
 ## Exercise 1
-### Measure the MET triggers efficiencies using the Orthogonal method
+### Measure the MET triggers efficiencies
 ```
 python3 test/MET_Efficiency_NanoAOD.py          # running over full 2023D EGamma0 NanoAOD datasets
 root -l --web=off histos_METTrigNanoAOD.root    # check histograms out
 python3 test/MET_Efficiency_Plotting.py         # plotting
-gio open ./                                     # check plots out, or you can scp pdf files to your machine
 ```
 
 ## Exercise 2
@@ -51,17 +48,15 @@ Try it with less input files first.
 python3 test/SingleMuon_Efficiency_NanoAOD_answerEx2.py   # running over partial 2023D EGamma0 NanoAOD datasets
 root -l --web=off histos_SingleMuTrigNanoAOD.root         # check histograms out
 python3 test/SingleMuon_Efficiency_Plotting_answerEx2.py  # plotting
-gio open ./                                               # check plots out, or you can scp pdf files to your machine
 ```
 </details>
 
 ## Exercise 3
-### Measure the SingleMuon (IsoMu24) trigger efficiency using the Tag & Probe method
+### Measure the SingleMuon (IsoMu24) trigger efficiency using the Tag & Probe
 ```
 python3 test/SingleMuon_Efficiency_TnP_NanoAOD.py           # running over full 2023Dv2 Muon0 NanoAOD datasets
 root -l --web=off histos_SingleMuTrigNanoAOD_TnP.root       # check histograms out
 python3 test/SingleMuon_Efficiency_TnP_Plotting_NanoAOD.py  # plotting
-gio open ./                                                 # check plots out, or you can scp pdf files to your machine
 ```
 
 ## Exercise 4 (Optional)
@@ -77,9 +72,9 @@ scp lxplus.cern.ch:<path>/<to>/<my_directory>/*.pdf .
 or you can open it via cernbox: https://cernbox.cern.ch/
 ```
 cd /eos/user/<initial>/<username>/
-mkdir CMSDAS2024
+mkdir CMSDAS2025
 cd -  # working directory used for trigger exercise
-cp *.pdf /eos/user/<initial>/<username>/CMSDAS2024
+cp *.pdf /eos/user/<initial>/<username>/CMSDAS2025
 ```
 
 ## References or useful links
