@@ -1,0 +1,1 @@
+# ShortExerciseTrigger2025
