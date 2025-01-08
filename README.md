@@ -84,6 +84,9 @@ cp *.pdf /eos/user/<initial>/<username>/CMSDAS2025
 ## References or useful links
 Twiki of Trigger exercise of CMS DAS @ CERN 2023 : [link](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolCERN2023TriggerExercise)
 
+
+Twiki of Trigger exercise of CMS DAS @ CERN 2023 : [link](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolCERN2023TriggerExercise)
+
 HLT Tutorials in 2024 : [link](https://indico.cern.ch/event/1344500/)
 
 HLT Tutorials in 2023 : [link](https://indico.cern.ch/event/1238936/)
